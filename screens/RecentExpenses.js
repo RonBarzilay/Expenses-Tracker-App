@@ -45,11 +45,9 @@ function RecentExpenses() {
     const today = new Date();
     const date7DaysAgo = getDateMinusDays(today, 7);
 
-    return expense.date > date7DaysAgo;
+    console.log(expense.date > date7DaysAgo);
 
-    recentExpenses.expenses.forEach((expense) => {
-      console.log("RecentExpenses: ExpenseItem date:", expense.date);
-    });
+    return expense.date > date7DaysAgo;
   });
 
   return (
